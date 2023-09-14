@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.connmo.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.sdm.plugins.dcmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.dcmo.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
-    vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.sdm.plugins.sprintdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.sdm.plugins.usccdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.usccdm.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.google.android.hardwareinfo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.hardwareinfo.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.google.omadm.trigger.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.omadm.trigger.xml \
@@ -197,8 +196,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     OemDmTrigger \
-    SprintDM \
-    SprintHM \
     TetheringEntitlement \
     USCCDM \
     WfcActivation \
@@ -1503,8 +1500,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/CSpire/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/CSpire/VoLTE/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Inland/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Inland/Commercial/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Rogers/Commercial/CA/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Rogers/Commercial/CA/mcfg_sw.mbn \
-    vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Sprint/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Sprint/Commercial/mcfg_sw.mbn \
-    vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Sprint/VoWiFi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Sprint/VoWiFi/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/TMO/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/TMO/Commercial/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Telus/Commercial/CA/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Telus/Commercial/CA/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/USCC/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/USCC/Commercial/mcfg_sw.mbn \
@@ -1521,8 +1516,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Lucky/Commercial/CA/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Lucky/Commercial/CA/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/MTS/Commercial/CA/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/MTS/Commercial/CA/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Solo_PC/Commercial/CA/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Solo_PC/Commercial/CA/mcfg_sw.mbn \
-    vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI/Commercial/mcfg_sw.mbn \
-    vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI_Data/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI_Data/Commercial/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TMO_FI/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TMO_FI/Commercial/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TbayCity/NonVoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TbayCity/NonVoLTE/mcfg_sw.mbn \
     vendor/google/crosshatch/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Telus/Lab/CA/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Telus/Lab/CA/mcfg_sw.mbn \
